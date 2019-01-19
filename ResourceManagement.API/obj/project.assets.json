@@ -2209,11 +2209,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\danielm\\source\\repos\\ResourceManagement\\ResourceManagement.API\\ResourceManagement.API.csproj",
+      "projectUniqueName": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\ResourceManagement.API\\ResourceManagement.API.csproj",
       "projectName": "ResourceManagement.API",
-      "projectPath": "C:\\Users\\danielm\\source\\repos\\ResourceManagement\\ResourceManagement.API\\ResourceManagement.API.csproj",
+      "projectPath": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\ResourceManagement.API\\ResourceManagement.API.csproj",
       "packagesPath": "C:\\Users\\danielm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danielm\\source\\repos\\ResourceManagement\\ResourceManagement.API\\obj\\",
+      "outputPath": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\ResourceManagement.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
