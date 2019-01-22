@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ResourceManagement.API.Entities
 {
-    public class SubResource
+    public class Subresource
     {
         [Key]
         public Guid SubResouceId { get; set; }
@@ -14,7 +14,7 @@ namespace ResourceManagement.API.Entities
         [MaxLength(200)]
         public string Name { get; set; }
         
-        public SubResourceType SubResourceType { get; set; }
+        public SubresourceType SubresourceType { get; set; }
 
         [ForeignKey("ResourceId")]
         public Resource Resource { get; set; }

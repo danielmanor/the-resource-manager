@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace ResourceManagement.API.Dtos
 {
-    public class SubresourceAbstractBase
+    public class ResourceWithSubresources
     {
+        public ICollection<Subresource> Subresources { get; set; } = new List<Subresource>();
     }
 }

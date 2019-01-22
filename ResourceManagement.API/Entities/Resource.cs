@@ -14,9 +14,9 @@ namespace ResourceManagement.API.Entities
         [MaxLength(2000)]
         public string Description { get; set; }
 
-        public decimal RandomDecimalValue { get; set; }
+        public decimal SomeDecimalValue { get; set; }
 
-        public ICollection<SubResource> SubResources { get; set; } = new List<SubResource>();
+        public ICollection<Subresource> SubResources { get; set; } = new List<Subresource>();
 
 
     }

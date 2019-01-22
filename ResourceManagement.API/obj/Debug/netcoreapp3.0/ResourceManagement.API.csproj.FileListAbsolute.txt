@@ -28,3 +28,4 @@ C:\Daniel\Workspace\Projects\ResourceManagement\ResourceManagement.API\obj\Debug
 C:\Daniel\Workspace\Projects\ResourceManagement\ResourceManagement.API\obj\Debug\netcoreapp3.0\ResourceManagement.API.RazorTargetAssemblyInfo.cache
 C:\Daniel\Workspace\Projects\ResourceManagement\ResourceManagement.API\obj\Debug\netcoreapp3.0\ResourceManagement.API.dll
 C:\Daniel\Workspace\Projects\ResourceManagement\ResourceManagement.API\obj\Debug\netcoreapp3.0\ResourceManagement.API.pdb
+C:\Daniel\Workspace\Projects\ResourceManagement\ResourceManagement.API\bin\Debug\netcoreapp3.0\AutoMapper.dll

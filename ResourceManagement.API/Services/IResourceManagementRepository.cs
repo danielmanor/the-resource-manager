@@ -17,9 +17,9 @@ namespace ResourceManagement.API.Services
         Task<bool> SaveAsync();
         Task<bool> ResourceExists(Guid resourceId);
         Task UpdateResource(Resource resource);
-        Task<IEnumerable<SubResource>> GetSubResources(Guid resourceId);
-        Task<IEnumerable<SubResource>> GetSubResources(Guid resourceId, IEnumerable<Guid> subResourceIds);
-        Task AddSubResource(Guid resourceId, SubResource subResource);
+        Task<IEnumerable<Subresource>> GetSubResources(Guid resourceId);
+        Task<IEnumerable<Subresource>> GetSubResources(Guid resourceId, IEnumerable<Guid> subResourceIds);
+        Task AddSubResource(Guid resourceId, Subresource subResource);
         Task<IEnumerable<ResourceManager>> GetResourceManagers();
 
     }

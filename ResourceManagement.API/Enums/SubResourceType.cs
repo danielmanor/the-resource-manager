@@ -1,7 +1,7 @@
 ﻿
 namespace ResourceManagement.API.Enums
 {
-    public enum SubResourceType
+    public enum SubresourceType
     {
         TypeA,
         TypeB,

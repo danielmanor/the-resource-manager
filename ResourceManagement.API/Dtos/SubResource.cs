@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace ResourceManagement.API.Dtos
 {
-    public class SubResource : SubResourceAbstractBase
+    public class Subresource : SubresourceAbstractBase
     {
-        Guid SubResourceId { get; set; }
+        Guid SubresourceId { get; set; }
     }
 }

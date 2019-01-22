@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace ResourceManagement.API.Dtos
 {
-    public class SubresourceAbstractBase
+    public class ResourceWithSomeDecimalValue : Resource
     {
+        public decimal SomeDecimalValue { get; set; }
     }
 }
