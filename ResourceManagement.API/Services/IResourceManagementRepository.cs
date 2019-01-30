@@ -10,7 +10,7 @@ namespace ResourceManagement.API.Services
     {
         Task AddResource(Resource resource);
         Task DeleteResource(Resource resource);
-        Task<Resource> GetResource(Guid resourceId, bool includeSubResources);
+        Task<Resource> GetResource(Guid resourceId, bool includeSubResources = false);
         Task<IEnumerable<Resource>> GetResources(bool includeSubResources = false);
         Task<IEnumerable<Resource>> GetResourceForManager(Guid managerId, bool includeSubResources = false);
         Task<bool> IsResourceManager(Guid resourceId, Guid managerId);

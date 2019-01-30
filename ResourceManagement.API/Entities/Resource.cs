@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ResourceManagement.API.Entities
 {
@@ -17,6 +16,11 @@ namespace ResourceManagement.API.Entities
         public decimal SomeDecimalValue { get; set; }
 
         public ICollection<Subresource> SubResources { get; set; } = new List<Subresource>();
+
+        public Guid ResourceManagerId { get; set; }
+
+        [ForeignKey("ResourceManagerId")]
+        public ResourceManager Manager { get; set; }
 
 
     }

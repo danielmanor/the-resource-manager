@@ -7,5 +7,6 @@ namespace ResourceManagement.API.Dtos
 {
     public class SubresourceAbstractBase
     {
+        public DateTimeOffset Date { get; set; }
     }
 }

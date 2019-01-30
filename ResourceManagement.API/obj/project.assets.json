@@ -1384,6 +1384,7 @@
       "type": "package",
       "path": "automapper/8.0.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "automapper.8.0.0.nupkg.sha512",
         "automapper.nuspec",
@@ -3056,11 +3057,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\ResourceManagement.API\\ResourceManagement.API.csproj",
+      "projectUniqueName": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\the-resource-manager-api\\ResourceManagement.API\\ResourceManagement.API.csproj",
       "projectName": "ResourceManagement.API",
-      "projectPath": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\ResourceManagement.API\\ResourceManagement.API.csproj",
+      "projectPath": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\the-resource-manager-api\\ResourceManagement.API\\ResourceManagement.API.csproj",
       "packagesPath": "C:\\Users\\danielm\\.nuget\\packages\\",
-      "outputPath": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\ResourceManagement.API\\obj\\",
+      "outputPath": "C:\\Daniel\\Workspace\\Projects\\ResourceManagement\\the-resource-manager-api\\ResourceManagement.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

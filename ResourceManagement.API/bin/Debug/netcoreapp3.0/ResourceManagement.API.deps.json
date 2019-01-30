@@ -452,14 +452,14 @@
     "AutoMapper/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kcbje0Y71XkvzPn8k6OROZGOn2SKaWimon3Bu1WUTVoV5GTJVym+k+zQuKApyyFVRfk7bisumj/qUX4xIIXS+Q==",
+      "sha512": "sha512-px8ZMtIq84dxciB29V+ZYOtsRLZP4JlflDDMW13LyeRdwsnIInzlcSHSxpWmVD6U3bbOl2FeLlgomnVtm0jvXw==",
       "path": "automapper/8.0.0",
       "hashPath": "automapper.8.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.App/3.0.0-preview-18579-0056": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-28OSupg4PyQNb0HDs8OMZP+5ND1zlnNKtq8PKHiGuxqXuIqpaNkqQnetdlHhhH4sF58RYQzsV27vcxSChMdmYg==",
+      "sha512": "sha512-nnptowpwsYpo6z4wlEGWIfzveJeEKy1F0x/htTY24i0kpWtKLySKktMMHu2r+F3X4Wh30zOlv9qE3wHstWgQiw==",
       "path": "microsoft.aspnetcore.app/3.0.0-preview-18579-0056",
       "hashPath": "microsoft.aspnetcore.app.3.0.0-preview-18579-0056.nupkg.sha512"
     },
@@ -529,35 +529,35 @@
     "Microsoft.NETCore.App/3.0.0-preview-27122-01": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZXfgdIgXv1G4OlSJq+xTAK2J1Yo3B+z7+gGZQzoyxKoB5bR267GCj+2203v6AU4ghaFLBkQh6F1kLioIs2SAIw==",
+      "sha512": "sha512-dVE3j+x3D5DfbAmU854uVcB5nRK80iUjh7TFxnFQ5Ak+I+CC2R7QXV2rDIxMlUOt+TZCp7VX1uJk7/ct6khmfA==",
       "path": "microsoft.netcore.app/3.0.0-preview-27122-01",
       "hashPath": "microsoft.netcore.app.3.0.0-preview-27122-01.nupkg.sha512"
     },
     "Microsoft.NETCore.DotNetAppHost/3.0.0-preview-27122-01": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kWeTxxiUu1R2ZehAfb2gd/vUAhgxlmXHEluH3/CkYdOwV5bvxLcZchlNU0xAAk3Pb6uLUl1E6bf6th+yp1qrCw==",
+      "sha512": "sha512-wIqnTGWztfgIt3rNNVaxlbBxZvzuw9HMI8eBWaqcn1KZ60J88X0wKQYzRC2EHyMvqbd1KMzeHdjFkXBp12+pKg==",
       "path": "microsoft.netcore.dotnetapphost/3.0.0-preview-27122-01",
       "hashPath": "microsoft.netcore.dotnetapphost.3.0.0-preview-27122-01.nupkg.sha512"
     },
     "Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview-27122-01": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+SNPRHwjvHswN0ADHSqCpBCT3LNVv7ILxfbXYsDqYEwa1etX2YwYDpO2j+4U/7pY/bE/H8LdmlMMBorpPIZMIQ==",
+      "sha512": "sha512-mcI4XmzniEQPwN0pPfROETKKX7TOrS7rqu+Q2z6rftV5VRJYen8qN0SwsBTN8ryktED4iFcIN1rRi8xfBrxbZA==",
       "path": "microsoft.netcore.dotnethostpolicy/3.0.0-preview-27122-01",
       "hashPath": "microsoft.netcore.dotnethostpolicy.3.0.0-preview-27122-01.nupkg.sha512"
     },
     "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview-27122-01": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LJGENrcxKnWtVWRw/HzsrSGO3Rur7xsWDQwB+WFF3MW6ov5D/DIlfZYY2cjgQP9IXOCD544AUqwvOQOH9r5Jxg==",
+      "sha512": "sha512-Mhe2rRIdzN2p9/luQS/4bT7PYVdyMHIpJ7gJ9NsP4umRCn57beyFVvYbDxRikeY1kzwmJ9+W0OwxhSDqdU6gKA==",
       "path": "microsoft.netcore.dotnethostresolver/3.0.0-preview-27122-01",
       "hashPath": "microsoft.netcore.dotnethostresolver.3.0.0-preview-27122-01.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.0.0-preview.18571.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KIs9ELVPZlMdd9TOzrY0owspckJUscyPap7LQVqR6GrLNcNnJVg0pF+ulbyxzuBtN3mRHKp16ei2linhMCnIEg==",
+      "sha512": "sha512-L/ctayQgo2gO0+M62Fy+17evn/PvEyj40FpXt7VQZuZElyAaQhJndBrj4BBmf3SJylW9H5IjYk0joepegj2IbA==",
       "path": "microsoft.netcore.platforms/3.0.0-preview.18571.3",
       "hashPath": "microsoft.netcore.platforms.3.0.0-preview.18571.3.nupkg.sha512"
     },

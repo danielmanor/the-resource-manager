@@ -8,6 +8,7 @@ using AutoMapper;
 using Microsoft.Extensions.Primitives;
 using System.Diagnostics;
 using ResourceManagement.API.Helpers;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace ResourceManagement.API.Controllers
 {
@@ -82,5 +83,103 @@ namespace ResourceManagement.API.Controllers
 
             return Ok(Mapper.Map<T>(resourceFromRepo));
         }
+
+        ///// add /////
+        [HttpPost]
+        [RequestHeaderMatchesMediaType("Content-Type",new[] { "application/json", "application/vnd.dm.resourceforcreation+json" })]
+        public async Task<IActionResult> AddResource([FromBody] Dtos.ResourceForCreation resource)
+        {
+            return await AddSpecificResource(resource);
+        }
+
+        [HttpPost]
+        [RequestHeaderMatchesMediaType("Content-Type", new[] { "application/json", "application/vnd.dm.resourcewithresourcemanagerforcreation+json" })]
+        public async Task<IActionResult> AddResourceWithResourceManager([FromBody] Dtos.ResourceWithResourceManagerForCreation resource)
+        {
+            return await AddSpecificResource(resource);
+        }
+
+        [HttpPost]
+        [RequestHeaderMatchesMediaType("Content-Type", new[] { "application/json", "application/vnd.dm.resourcewithsubresourcesforcreation+json" })]
+        public async Task<IActionResult> AddResourceWithSubResources([FromBody] Dtos.ResourceWithSubresourcesForCreation resource)
+        {
+            return await AddSpecificResource(resource);
+        }
+
+        [HttpPost]
+        [RequestHeaderMatchesMediaType("Content-Type", new[] { "application/json", "application/vnd.dm.resourcewithsubresourcesandresourcemanagerforcreation+json" })]
+        public async Task<IActionResult> AddResourceWithSubResourcesAndResourceManager([FromBody] Dtos.ResourceWithSubresourcesAndResourceManagerForCreation resource)
+        {
+            return await AddSpecificResource(resource);
+        }
+
+        public async Task<IActionResult> AddSpecificResource<T>(T resource) where T : class
+        {
+            if(resource == null)
+            {
+                return BadRequest();
+            }
+
+            if(!ModelState.IsValid)
+            {
+                return new UnprocessableEntityObjectResult(ModelState);
+            }
+
+            var resourceEntity = Mapper.Map<Entities.Resource>(resource);
+
+            await _resourceManagementRepository.AddResource(resourceEntity);
+
+            if(!await _resourceManagementRepository.SaveAsync())
+            {
+                throw new Exception("adding resource failed on save");
+            }
+
+            var resourceRes = Mapper.Map<Dtos.Resource>(resourceEntity);
+
+            return CreatedAtRoute("GetResource", new { resourceId = resourceRes.ResourceId });
+        }
+
+        [HttpPatch("{resourceId}")]
+        public async Task<IActionResult> PartiallyUpdateResource(Guid resourceId, [FromBody] JsonPatchDocument<Dtos.ResourceForUpdate> jsonPatchDocument)
+        {
+            if(jsonPatchDocument == null)
+            {
+                return BadRequest();
+            }
+
+            var resFromDb = await _resourceManagementRepository.GetResource(resourceId);
+
+            if(resFromDb == null)
+            {
+                return BadRequest();
+            }
+
+            var resourceToPatch = Mapper.Map<Dtos.ResourceForUpdate>(resFromDb);
+
+            jsonPatchDocument.ApplyTo(resourceToPatch, ModelState);
+
+            if (!ModelState.IsValid)
+            {
+                return new UnprocessableEntityObjectResult(ModelState);
+            }
+
+            if (!TryValidateModel(resourceToPatch))
+            {
+                return new UnprocessableEntityObjectResult(ModelState);
+            }
+
+            Mapper.Map(resourceToPatch, resFromDb);
+
+            await _resourceManagementRepository.UpdateResource(resFromDb);
+
+            if(!await _resourceManagementRepository.SaveAsync())
+            {
+                throw new Exception("Updating a resource failed on save.");
+            }
+
+            return NoContent();
+        }
+       
+
     }
 }
